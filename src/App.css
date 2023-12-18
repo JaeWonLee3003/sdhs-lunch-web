@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'PretendardBold';
+  src: url('/public/font/Pretendard-Bold.otf') format('opentype'); /* OTF 포맷 경로 */
+  font-weight: bold; /* 폰트의 두께에 따라 설정 */
+  font-style: normal; /* 폰트의 스타일에 따라 설정 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: calc(100vh - 50px); /* 50px 만큼 위로 이동 */
 }
 
-.App-link {
-  color: #61dafb;
+.SubTitle {
+  color: #000;
+  text-align: center;
+  font-family: 'PretendardBold', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Title{
+  font-family: 'PretendardBold', sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 110px;
+}
+
+.SearchOurSchool{
+  width: 500px;
+  height: 60px;
+  border-radius: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.00);
+  background: #C12231;
+  box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #FFF;
+  text-align: center;
+  font-family: 'Noto Sans KR';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Login_info{
+
 }
